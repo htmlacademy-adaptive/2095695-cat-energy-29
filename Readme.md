@@ -1,11 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анастасия Терехова](https://up.htmlacademy.ru/adaptive/29/user/2095695).
-<<<<<<< HEAD
-* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199)
-||||||| f8f4a39
 * Наставник: `Неизвестно`.
-=======
 * Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 >>>>>>> module2-task1
 
