@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body class="page__body">
@@ -63,27 +64,27 @@
           </ul>
         </fieldset>
         <fieldset class="form__group field-group">
-         <legend class="visually-hidden">Цель программы</legend>
-         <ul class="field-group__list">
-          <li class="field-group__item">
-            <label class="control control--radio">
-              <input class="control__input" name="target" type="radio" value="fit">
-              <span class="control__lead">Похудение</span>
-            </label>
-          </li>
-          <li class="field-group__item">
-            <label class="control control--radio">
-              <input class="control__input" name="target" type="radio" value="fitness">
-              <span class="control__lead">Набор массы</span>
-            </label>
-          </li>
-          <li class="field-group__item">
-            <label class="control control--radio">
-              <input class="control__input" name="target" type="radio" value="advice">
-              <span class="control__lead">Не знаю (нужен ваш совет)</span>
-            </label>
-          </li>
-         </ul>
+          <legend class="visually-hidden">Цель программы</legend>
+          <ul class="field-group__list">
+            <li class="field-group__item">
+              <label class="control control--radio">
+                <input class="control__input" name="target" type="radio" value="fit">
+                <span class="control__lead">Похудение</span>
+              </label>
+            </li>
+            <li class="field-group__item">
+              <label class="control control--radio">
+                <input class="control__input" name="target" type="radio" value="fitness">
+                <span class="control__lead">Набор массы</span>
+              </label>
+            </li>
+            <li class="field-group__item">
+              <label class="control control--radio">
+                <input class="control__input" name="target" type="radio" value="advice">
+                <span class="control__lead">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form__group field-group">
           <legend class="field-group__title">Контактные данные (владельца кота)</legend>
@@ -97,7 +98,7 @@
             <li class="field-group__item">
               <label class="field">
                 <span class="field__lead">Телефон:*</span>
-                <input class="field__input" name="phone" type="tel"placeholder="8 (960) 900-60-90" required>
+                <input class="field__input" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
@@ -105,7 +106,8 @@
         <div class="form__group field-group">
           <label class="field-group__title" for="comment">Комментарий</label>
           <div class="field">
-            <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="field__input" name="comment" id="comment" rows="5"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
         <fieldset class="form__group field-group">
@@ -138,7 +140,7 @@
           </ul>
         </fieldset>
         <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__additional">* — Обязательные поля</p>
+        <p class="form__additional">* — Обязательные поля</p>
       </form>
     </section>
     <div class="connection">
@@ -152,7 +154,7 @@
     </div>
     <h3 class="visually-hidden">Локация</h3>
     <div class="map">
-      <img class="map__image" src="img/location.jpg"  width="320" height="362" alt="Локация Кэт Энерджи">
+      <img class="map__image" src="img/location.jpg" width="320" height="362" alt="Локация Кэт Энерджи">
       <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
