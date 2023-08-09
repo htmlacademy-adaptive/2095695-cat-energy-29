@@ -1,6 +1,6 @@
 .advantages__title {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 42px;
 }
 
 .advantages__list {
@@ -10,5 +10,18 @@
 }
 
 .advantages__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
   padding-bottom: 26px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin-top: -2px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }

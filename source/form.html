@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-widht, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
@@ -38,9 +39,10 @@
   </header>
   <main class="page__main page-form">
     <div class="wrapper">
-    <h1 class="page__title page__title--color">Подбор программы</h1>
-    <p class="page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-  </div>
+      <h1 class="page__title page__title-form page__title--color">Подбор программы</h1>
+      <p class="page__subtitle page__subtitle-form">Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </div>
     <section class="page__form form">
       <div class="wrapper">
         <h2 class="visually-hidden">Форма анкеты</h2>
@@ -72,20 +74,23 @@
             <legend class="visually-hidden">Цель программы</legend>
             <ul class="field-group__list style-list">
               <li class="field-group__item">
-                <label class="control control--radio">
-                  <input class="control__input" name="target" type="radio" value="fit">
+                <label class="control">
+                  <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
+                    value="fit">
                   <span class="control__lead">Похудение</span>
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="control control--radio">
-                  <input class="control__input" name="target" type="radio" value="fitness">
+                <label class="control">
+                  <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
+                    value="fitness">
                   <span class="control__lead">Набор массы</span>
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="control control--radio">
-                  <input class="control__input" name="target" type="radio" value="advice">
+                <label class="control">
+                  <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
+                    value="advice">
                   <span class="control__lead">Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
@@ -111,34 +116,35 @@
           <div class="form__group field-group">
             <label class="field-group__title" for="comment">Комментарий</label>
             <div class="field">
-              <textarea class="field__input" name="comment" id="comment" rows="5"
+              <textarea class="field__input field-textarea" name="comment" id="comment" rows="5"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
           <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Дополнительно</legend>
+            <legend class="field-group__title">Дополнительно</legend>
             <ul class="field-group__list style-list">
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" name="additional" type="checkbox" value="sweetener" checked>
+                <label class="control">
+                  <input class="control__input visually-hidden" name="additional" type="checkbox" value="sweetener"
+                    checked>
                   <span class="control__lead">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" name="additional" type="checkbox" value="water">
+                <label class="control">
+                  <input class="control__input visually-hidden" name="additional" type="checkbox" value="water">
                   <span class="control__lead">Питьевая вода</span>
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" name="additional" type="checkbox" value="milk">
+                <label class="control">
+                  <input class="control__input visually-hidden" name="additional" type="checkbox" value="milk">
                   <span class="control__lead">Молоко</span>
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" name="additional" type="checkbox" value="vitamins">
+                <label class="control">
+                  <input class="control__input visually-hidden" name="additional" type="checkbox" value="vitamins">
                   <span class="control__lead">Витамины</span>
                 </label>
               </li>
@@ -146,29 +152,21 @@
           </fieldset>
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__additional">* — Обязательные поля</p>
+        </form>
       </div>
-      </form>
     </section>
-    <div class="connection">
-      <div class="wrapper">
-        <div class="connection__cooperation cooperation">
-          <h2 class="visually-hidden">Сотрудничество</h2>
-          <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
-        </div>
-        <section class="connection__contacts contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <section class="contacts">
+      <div class="contacts__container contacts__container--color wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-    </div>
-    <div class="map">
-      <h3 class="visually-hidden">Локация</h3>
-      <img class="map__image" src="img/location.jpg" width="320" height="362" alt="Локация Кэт Энерджи">
+      <img class="contacts__map-image" src="img/location.jpg" width="320" height="362" alt="Локация Кэт Энерджи">
       <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe> -->
-    </div>
     </section>
   </main>
   <footer class="page__footer footer">

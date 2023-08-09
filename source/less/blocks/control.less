@@ -1,0 +1,51 @@
+.control__lead {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 13px;
+
+  &::before {
+    content: " ";
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(205, 205, 205, 1);
+    cursor: pointer;
+  }
+
+  &::after {
+    content: " ";
+    display: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("../img/tick.svg");
+    cursor: pointer;
+  }
+}
+
+.control__input:checked + .control__lead::after {
+  display: block;
+}
+
+.control__lead::before,
+.control__lead::after {
+  content: "";
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 30px;
+  margin-top: 2px;
+}
+
+.control__input--radio + .control__lead::before {
+  border-radius: 50%;
+}
+
+.control__input--radio + .control__lead::after {
+  background-color: rgba(104, 183, 56, 1);
+  border: 8px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  right: 7px;
+  width: 8px;
+  height: 8px;
+}
