@@ -15,27 +15,27 @@
         <img src="img/logo_cat_energy.svg" width="190" height="38"
           alt="Логотип компании функционального питания для котов Кэт Энерджи">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list style-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item ">
-            <a class="site-list__link site-list__link--active" href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list style-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item ">
+          <a class="site-list__link site-list__link--active" href="#">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page__main page-main">
 
@@ -185,7 +185,7 @@
           <a class="card-product__button  button">Заказать</a>
         </div>
       </article>
-      <article class="catalog__product card-product card-product__property--more">
+      <article class="catalog__product card-product card-product--more">
         <div class="wrapper">
           <h3 class="card-product__title card-product__title--more">Показать еще 100500 товаров</h3>
           <p class="card-product__property card-product__property--more">На самом деле вкусов гораздо больше!</p>
@@ -237,10 +237,12 @@
       </div>
     </aside>
     <section class="contacts">
-      <div class="contacts__container contacts__container--color wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="contacts__container contacts__container--color">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
       <img class="contacts__map-image" src="img/location.jpg" width="320" height="362" alt="Локация Кэт Энерджи">
       <!-- <iframe
