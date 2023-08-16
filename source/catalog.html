@@ -3,46 +3,49 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-widht, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header page__header">
     <div class="wrapper">
       <a class="main-header__logo" href="index.html">
-        <img src="img/logo_cat_energy.svg" width="190" height="38"
-          alt="Логотип компании функционального питания для котов Кэт Энерджи">
+        <picture>
+          <source srcset="img/img_mobile/logo_cat_energy.svg" media="(max-width: 767px)">
+          <source srcset="img/img_tablet/logo_cat_energy_tablet.svg" media="(min-width: 768px) and (max-width: 1439px)">
+          <source srcset="img/img_desktop/logo_cat_energy_desktop.svg" media="(min-width: 1440px)">
+          <img src="img/img_mobile/logo_cat_energy.svg" width="190" height="38"
+            alt="Логотип компании функционального питания для котов Кэт Энерджи">
+        </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list style-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item ">
-            <a class="site-list__link site-list__link--active" href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list style-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item ">
+          <a class="site-list__link site-list__link--active" href="#">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page__main page-main">
-
     <h1 class="page__title catalog-title page__title--color">
       <span class="wrapper">Каталог продукции</span>
     </h1>
-
     <section class="page-main__catalog catalog">
       <h2 class="visually-hidden">Каталог основной продукции</h2>
       <article class="catalog__product card-product">
@@ -169,8 +172,8 @@
         <div class="wrapper">
           <a class="card-product__link-img"><img src="img/catalog/cat_energy_slim_rice_500g.png" width="72" height="84"
               alt="Банка корма Кэт Энерджи Слим с рисом 500 грамм"></a>
-          <div class="card-product__container>
-            <a class=" card-product__link-title">
+          <div class="card-product__container">
+            <a class="card-product__link-title">
             <h3 class="card-product__title">Cat Energy Slim 500 г</h3>
             </a>
             <dl class="card-product__description">
@@ -185,7 +188,7 @@
           <a class="card-product__button  button">Заказать</a>
         </div>
       </article>
-      <article class="catalog__product card-product card-product__property--more">
+      <article class="catalog__product card-product card-product--more">
         <div class="wrapper">
           <h3 class="card-product__title card-product__title--more">Показать еще 100500 товаров</h3>
           <p class="card-product__property card-product__property--more">На самом деле вкусов гораздо больше!</p>
@@ -194,9 +197,7 @@
       </article>
     </section>
     <section class="page-main__additional additional-catalog">
-      <h2 class="additional-catalog__title">
-        <span class="wrapper">Дополнительные товары</span>
-      </h2>
+      <h2 class="additional-catalog__title">Дополнительные товары</h2>
       <article class="additional-catalog__product card-product wrapper">
         <h3 class="additional-catalog__subtitle">Сахарозаменитель</h3>
         <div class="additional-catalog__description">
@@ -237,17 +238,17 @@
       </div>
     </aside>
     <section class="contacts">
-      <div class="contacts__container contacts__container--color wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="contacts__container contacts__container--color">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
-      <img class="contacts__map-image" src="img/location.jpg" width="320" height="362" alt="Локация Кэт Энерджи">
-      <!-- <iframe
+      <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe> -->
+        width="320" height="302" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
   </main>
   <footer class="page__footer footer">
@@ -334,6 +335,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

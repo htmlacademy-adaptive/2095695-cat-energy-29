@@ -3,7 +3,7 @@
 
   &--more {
     display: block;
-    padding: 60px 0 25px 0;
+    padding: 78px 0 25px 0;
     border-bottom: 1px solid rgba(235, 235, 235, 1);
   }
 }
@@ -32,19 +32,27 @@
   padding-right: 70px;
 }
 
+.card-product--more .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 .card-product__title--more {
   position: relative;
   text-align: center;
   padding: 0;
+  margin: 0;
 
   &::before {
     content: " ";
     position: absolute;
-    bottom: 40px;
-    left: 120px;
     background-image: url("../img/catalog/plus.svg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    top: -39px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 30px;
     width: 30px;
     display: block;
