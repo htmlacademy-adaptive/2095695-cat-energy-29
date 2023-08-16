@@ -20,6 +20,10 @@
   flex-grow: 1;
 }
 
+.page-main__promo .wrapper {
+  position: relative;
+}
+
 .page__subtitle {
   color: rgba(0, 0, 0, 1);
   font-family: "Oswald", "Arial", sans-serif;
@@ -37,4 +41,10 @@
 
 .page__subtitle-form {
   padding-bottom: 39px;
+}
+
+.page__header {
+  @media (min-width: @tablet-width) {
+    margin-bottom: -39px;
+  }
 }

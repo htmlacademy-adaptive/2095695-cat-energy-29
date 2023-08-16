@@ -8,8 +8,21 @@
   line-height: 36px;
   margin: 0;
 
-  &--color {
+  @media (min-width: @tablet-width) {
     color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    // padding: 0;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    padding: 65px 104px 40px 90px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 600px;
+    background-color: transparent;
+    padding-left: 60px;
   }
 }
 
