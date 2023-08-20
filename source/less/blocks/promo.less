@@ -18,7 +18,7 @@
     background-image: none;
     min-height: 895px;
     padding-top: 60px;
-    padding-left: 190px;
+    padding-left: 120px;
   }
 }
 
@@ -28,10 +28,11 @@
     background-color: rgba(76, 74, 79, 1);
     margin-top: -150px;
     padding-top: 150px;
-    min-height: 680px;
-    background-position: top right;
+    background-position: 100%;
     background-size: auto 100%;
     background-repeat: no-repeat;
+    min-height: 680px;
+    position: relative;
   }
 }
 
@@ -41,19 +42,11 @@
   }
 }
 
-.promo .wrapper {
-  @media (min-width: @tablet-width) {
-    position: relative;
-  }
-}
-
 .promo__title {
   padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 40px;
-    position: relative;
-    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,38 +72,26 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    position: relative;
-    z-index: 5;
+    display: block;
   }
-}
-
-.promo__image-container {
-  position: relative;
 }
 
 .promo__image {
   display: block;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 197px;
-    left: -87px;
-
-    @media (min-width: @desktop-width) {
-      position: absolute;
-      top: 0;
-      left: 350px;
-    }
-  }
 }
 
 .promo__picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   @media (min-width: @tablet-width) {
-    order: 4;
+    position: absolute;
+    top: 210px;
+    left: -80px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 33px;
+    left: 387px;
+    order: 2;
   }
 }
 
@@ -119,6 +100,7 @@
   text-align: center;
   min-width: 280px;
   padding: 8px 44px;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
     width: 244px;
@@ -128,7 +110,17 @@
     padding: 14px 26px;
     min-width: auto;
     position: relative;
-    z-index: 4;
     margin-top: 50px;
+  }
+}
+
+.promo .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 455px;
+
+  @media (min-width: @desktop-width) {
+    height: 560px;
+    flex-grow: 1;
   }
 }
