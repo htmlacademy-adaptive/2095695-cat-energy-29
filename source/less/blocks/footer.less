@@ -3,6 +3,23 @@
   flex-direction: row;
   padding: 40px 0;
   background-color: rgba(242, 242, 242, 1);
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.footer .wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 66px 0;
+  }
 }
 
 .footer__logo {
@@ -10,4 +27,8 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
