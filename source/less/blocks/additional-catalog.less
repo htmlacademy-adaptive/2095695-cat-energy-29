@@ -169,17 +169,33 @@
   @media (min-width: @mobile-width-only) and (min-resolution: 2dppx) {
     background: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 290px), url("../img/img_mobile/bg_present@2x.jpg");
   }
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .additional-catalog__promo {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 0), url("../img/img_tablet/bg_present_tablet.jpg");
     background-repeat: no-repeat;
     background-size: 100% 200px;
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+  .additional-catalog__promo  {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 0), url("../img/img_tablet/bg_present_tablet@2x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-catalog__promo {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 0), url("../img/img_desktop/bg_present_desktop.jpg");
     background-repeat: no-repeat;
     background-size: 245px auto;
     background-position: 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .additional-catalog__promo {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 0), url("../img/img_desktop/bg_present_desktop@2x.jpg");
   }
 }

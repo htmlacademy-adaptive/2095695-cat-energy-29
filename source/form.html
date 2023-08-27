@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -53,77 +57,84 @@
         <h2 class="visually-hidden">Форма анкеты</h2>
         <form class="form__body" method="post" action="https://echo.htmlacademy.ru/">
           <div class="form__group-container">
-          <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Данные кота</legend>
-            <ul class="field-group__list style-list">
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Имя:*</span>
-                  <input class="field__input" name="cat-name" type="text" placeholder="Барсик" required>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Вес (кг):*</span>
-                  <input class="field__input" name="cat-weight" type="text" placeholder="7" required>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Возраст (лет):</span>
-                  <input class="field__input" name="cat-name" type="text" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Цель программы</legend>
-            <ul class="field-group__list style-list field-group__list--border">
-              <li class="field-group__item">
-                <label class="control">
-                  <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
-                    value="fit" checked>
-                  <span class="control__lead">Похудение</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control">
-                  <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
-                    value="fitness">
-                  <span class="control__lead">Набор массы</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control">
-                  <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
-                    value="advice">
-                  <span class="control__lead">Не знаю (нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Данные кота</legend>
+              <ul class="field-group__list style-list">
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">Имя:*</span>
+                    <input class="field__input" name="cat-name" type="text" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">Вес (кг):*</span>
+                    <input class="field__input" name="cat-weight" type="text" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">Возраст (лет):</span>
+                    <input class="field__input" name="cat-name" type="text" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Цель программы</legend>
+              <ul class="field-group__list style-list field-group__list--border">
+                <li class="field-group__item">
+                  <label class="control">
+                    <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
+                      value="fit" checked>
+                    <span class="control__lead">Похудение</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control">
+                    <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
+                      value="fitness">
+                    <span class="control__lead">Набор массы</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control">
+                    <input class="control__input control__input--radio visually-hidden" name="target" type="radio"
+                      value="advice">
+                    <span class="control__lead">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__group field-group">
             <legend class="field-group__title">Контактные данные (владельца кота)</legend>
             <ul class="field-group__list style-list field-group__list-data">
               <li class="field-group__item">
                 <label class="field field-data">
                   <span class="field__lead">E-mail:*</span>
-                  <input class="field__input field__input-data" name="e-mail" type="email" placeholder="kuklachev@gmail.com" required>
-                  <svg class="field__icon field__icon--mail" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                  <input class="field__input field__input-data" name="e-mail" type="email"
+                    placeholder="kuklachev@gmail.com" required>
+                  <svg class="field__icon field__icon--mail" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__lead">Телефон:*</span>
-                  <input class="field__input field__input-data" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
-                  <svg class="field__icon field__icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <input class="field__input field__input-data" name="phone" type="tel" placeholder="8 (960) 900-60-90"
+                    required>
+                  <svg class="field__icon field__icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="phone-stroke_1">
-                    <path id="Vector" d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path id="Vector"
+                        d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
+                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                     </g>
-                    </svg>
+                  </svg>
                 </label>
               </li>
             </ul>
@@ -166,9 +177,9 @@
             </ul>
           </fieldset>
           <div class="form__container">
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__additional">* — Обязательные поля</p>
-        </div>
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__additional">* — Обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>
@@ -183,18 +194,20 @@
       <div class="contacts__map-container">
         <noscript>
           <picture>
-            <source media="(min-width: 1440px)"
-              srcset="img/img_desktop/location_desktop@1x.jpg 1x, img/img_desktop/location_desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/img_tablet/location_tablet@1x.jpg 1x, img/img_tablet/location_tablet@2x.jpg 2x">
-            <img class="contacts__map-img"  src="img/img_mobile/location@1x.jpg" srcset="img/img_mobile/location@2x.jpg" width="320" height="362"
-              alt="Карта местоположения компании Кэт энерджи">
+            <source type="image/jpg" media="(min-width: 1440px)"
+              srcset="img/img_desktop/location_desktop@1x.jpg 1x, img/img_desktop/location_desktop@2x.jpg 2x"
+              width="1440" height="400">
+            <source type="image/jpg" media="(min-width: 768px)"
+              srcset="img/img_tablet/location_tablet@1x.jpg 1x, img/img_tablet/location_tablet@2x.jpg 2x" width="768"
+              height="400">
+            <img class="contacts__map-img" src="img/img_mobile/location@1x.jpg" srcset="img/img_mobile/location@2x.jpg"
+              width="320" height="362" alt="Карта местоположения компании Кэт энерджи">
           </picture>
         </noscript>
-      <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
-        width="320" height="302" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
+          width="320" height="302" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
   </main>
