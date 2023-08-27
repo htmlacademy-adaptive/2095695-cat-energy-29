@@ -1,35 +1,53 @@
 .promo {
-  min-height: 440px;
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px), url("../img/img_mobile/bg_image_promo.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px), url("../img/img_mobile/bg_image_promo.jpg");
   padding: 27px 0 20px 0;
+  background-color: rgba(76, 74, 79, 1);
+  background-repeat: no-repeat;
+  background-position: top;
+}
 
-  @media (min-resolution: 2dppx) {
-    .promo {
-      background: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px), url("../img/img_mobile/bg_image_promo@2x.jpg");
-      background-size: 640px auto;
-    }
+@media (min-width: @mobile-width-only) and (min-resolution: 2dppx) {
+  .promo {
+    background: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px), url("../img/img_mobile/bg_image_promo@2x.jpg");
   }
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .promo {
     background-color: rgba(255, 255, 255, 1);
     background-image: none;
+    min-height: 895px;
+    padding-top: 60px;
+    padding-left: 120px;
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .promo {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/img_desktop/bg_image_promo_desktop.jpg");
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: auto, 50%;
+    background-color: rgba(76, 74, 79, 1);
     margin-top: -150px;
     padding-top: 150px;
+    background-position: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
     min-height: 680px;
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/img_desktop/bg_image_promo_desktop@2x.jpg");
   }
 }
 
 .promo__title {
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 40px;
@@ -45,42 +63,37 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-bottom: 0;
+  padding-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     color: rgba(0, 0, 0, 1);
     font-size: 20px;
+    padding: 0;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    padding-left: 90px;
-
-    @media (min-width: @desktop-width) {
-      padding-left: 60px;
-    }
+    display: block;
   }
-}
-
-.promo__image-container {
-  position: relative;
 }
 
 .promo__image {
   display: block;
-  padding-top: 30px;
-
-  @media (min-width: @desktop-width) {
-    padding: 0;
-    position: absolute;
-    top: 20px;
-    right: 223px;
-  }
 }
 
 .promo__picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: -70px;
+    left: -50px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 33px;
+    left: 387px;
+    order: 2;
+  }
 }
 
 .promo__button {
@@ -88,20 +101,36 @@
   text-align: center;
   min-width: 280px;
   padding: 8px 44px;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 282px;
-    left: 90px;
+    width: 244px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     padding: 14px 26px;
     min-width: auto;
+    position: relative;
+    margin-top: 50px;
+  }
+}
+
+.promo .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 455px;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 60px;
-    top: 300px;
+    min-width: 1220px;
+  }
+}
+
+.promo__content-bg {
+  @media (min-width: @desktop-width) {
+    width: 690px;
   }
 }

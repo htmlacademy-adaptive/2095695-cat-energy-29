@@ -1,8 +1,20 @@
 .social {
   display: flex;
-  justify-content: space-between;
   padding: 20px 70px;
   border: 1px solid rgba(217, 217, 217, 1);
   border-right: none;
   border-left: none;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.social__link {
+  @media (min-width: @tablet-width) {
+    padding: 12px;
+    display: block;
+  }
 }

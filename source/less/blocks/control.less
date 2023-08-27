@@ -21,6 +21,20 @@
     background-image: url("../img/img_mobile/tick.svg");
     cursor: pointer;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    grid-template-columns: 40px 1fr;
+    column-gap: 20px;
+
+    &::after {
+      content: " ";
+      background-position: 50% 50%;
+      background-image: url("../img/img_tablet/tick_tablet.svg");
+      cursor: pointer;
+    }
+  }
 }
 
 .control__input:checked + .control__lead::after {
@@ -34,6 +48,11 @@
   grid-row: 1 / 2;
   height: 30px;
   margin-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .control__input--radio + .control__lead::before {
@@ -46,6 +65,12 @@
   border-radius: 50%;
   position: absolute;
   right: 7px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
+
+  @media (min-width: @tablet-width) {
+    right: 11px;
+    width: 18px;
+    height: 18px;
+  }
 }
