@@ -22,20 +22,20 @@
       </a>
     </div>
     <nav class="main-nav main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       <ul class="main-nav__list site-list style-list">
         <li class="site-list__item">
-          <a class="site-list__link  site-list__link--active" href="#">
+          <a class="site-list__link site-list__link--color  site-list__link--active site-list__link-line" href="#">
             Главная
           </a>
         </li>
         <li class="site-list__item ">
-          <a class="site-list__link" href="catalog.html">
+          <a class="site-list__link site-list__link--color" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">
+          <a class="site-list__link site-list__link--color" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -46,13 +46,13 @@
     <section class="page-main__promo promo">
       <div class="wrapper">
         <div class="promo__content-bg">
-          <h1 class="page__title page__title--color promo__title">Функциональное<br>питание для котов</h1>
+          <h1 class="page__title promo__title">Функциональное<br>питание для котов</h1>
           <h2 class="visually-hidden">Реклама</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
         </div>
         <div class="promo__picture">
           <picture>
-            <source media="(min-width: 1220px)"
+            <source media="(min-width: 1440px)"
               srcset="img/img_desktop/promo-desktop.png 1x, img/img_desktop/promo-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
               srcset="img/img_tablet/promo-tablet.png 1x, img/img_tablet/promo-tablet@2x.png 2x">
@@ -123,43 +123,63 @@
         </div>
         <div class="example__view">
           <div class="example__images">
-            <div class="example__image example__image--before example__image--active">
-              <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/img_tablet/cat_tablet_before@1x.png 1x, img/img_tablet/cat_tablet_before@2x.png 2x">
-                <img src="img/img_mobile/cat_mobile_before@1x.png" srcset="img/img_mobile/cat_mobile_before@2x.png 2x"
-                  width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
-              </picture>
-            </div>
-            <div class="example__image example__image--after">
-              <picture>
-                <source media="(min-width: 768px)"
-                  srcset="img/img_tablet/cat_tablet_after@1x.png 1x, img/img_tablet/cat_tablet_after@2x.png 2x">
-                <img src="img/img_mobile/cat_mobile_after@1x.png"
-                  srcset="img/img_mobile/cat_mobile_after@1x.png 1x, img/img_mobile/cat_mobile_after@2x.png 2x"
-                  width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
-              </picture>
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/img_tablet/cat_tablet_before@1x.png 1x, img/img_tablet/cat_tablet_before@2x.png 2x">
+              <img class="example__image example__image--before" src="img/img_mobile/cat_mobile_before@1x.png"
+                srcset="img/img_mobile/cat_mobile_before@2x.png 2x" width="280" height="232"
+                alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/img_tablet/cat_tablet_after@1x.png 1x, img/img_tablet/cat_tablet_after@2x.png 2x">
+              <img class="example__image example__image--after" src="img/img_mobile/cat_mobile_after@1x.png"
+                srcset="img/img_mobile/cat_mobile_after@1x.png 1x, img/img_mobile/cat_mobile_after@2x.png 2x"
+                width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+            </picture>
+          </div>
+          <button class="example__slider-button button" type="button">
+            <span class="visually-hidden">Было/Стало</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="thumb">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+                <g id="Vector0">
+                  <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
+                  <path d="M32 20L24 11V29L32 20Z" fill="#666666" />
+                </g>
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              </g>
+            </svg>
+          </button>
+        </div>
+        </div>
+      </section>
+        <section class="contacts">
+          <div class="contacts__container contacts__container--color">
+            <div class="wrapper">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
             </div>
           </div>
-          <div class="example__slider">
-            <button class="example__slider-button button" type="button"><span
-                class="visually-hidden">Было/Стало</span></button>
+          <div class="contacts__map-container">
+            <noscript>
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/img_desktop/location_desktop@1x.jpg 1x, img/img_desktop/location_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/img_tablet/location_tablet@1x.jpg 1x, img/img_tablet/location_tablet@2x.jpg 2x">
+                <img class="contacts__map-img" src="img/img_mobile/location@1x.jpg"
+                  srcset="img/img_mobile/location@2x.jpg" width="320" height="362"
+                  alt="Карта местоположения компании Кэт энерджи">
+              </picture>
+            </noscript>
+            <iframe class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
+              width="320" height="302" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
-        </div>
-    </section>
-    <section class="contacts">
-      <div class="contacts__container">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная,д.&nbsp;19/8 <span>Санкт-Петербург</span></address>
-        </div>
-      </div>
-      <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5865306441483!2d30.321900138105!3d59.9390021238115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690643413526!5m2!1sru!2sru"
-        width="320" height="302" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
+        </section>
   </main>
   <footer class="page__footer footer">
     <div class="wrapper">

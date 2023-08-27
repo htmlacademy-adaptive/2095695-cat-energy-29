@@ -82,13 +82,14 @@
 
 .promo__picture {
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 210px;
-    left: -80px;
+    position: relative;
+    top: -70px;
+    left: -50px;
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
+    position: absolute;
     top: 33px;
     left: 387px;
     order: 2;
@@ -119,8 +120,17 @@
   flex-direction: column;
   min-height: 455px;
 
+  @media (min-width: @tablet-width) {
+    width: 600px;
+  }
+
   @media (min-width: @desktop-width) {
-    height: 560px;
-    flex-grow: 1;
+    min-width: 1220px;
+  }
+}
+
+.promo__content-bg {
+  @media (min-width: @desktop-width) {
+    width: 690px;
   }
 }

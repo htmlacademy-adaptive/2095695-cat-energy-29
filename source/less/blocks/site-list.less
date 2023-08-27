@@ -19,9 +19,24 @@
   }
 
   @media (min-width: @desktop-width) {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(17, 17, 17, 1);
     font-size: 20px;
     font-weight: 400;
+  }
+
+  &--color {
+    @media (min-width: @desktop-width) {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: @tablet-width) {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(104, 183, 56, 1);
   }
 }
 
@@ -33,5 +48,11 @@
   @media (min-width: @tablet-width) {
     padding: 10px 17px 16px;
     border: none;
+  }
+}
+
+.site-list__link-line {
+  @media (min-width: @desktop-width) {
+    text-decoration-color: rgba(255, 255, 255, 1);
   }
 }
