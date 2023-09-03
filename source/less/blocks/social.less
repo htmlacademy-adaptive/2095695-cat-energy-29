@@ -1,6 +1,6 @@
 .social {
   display: flex;
-  padding: 20px 70px;
+  padding: 21px 74px 15px;
   border: 1px solid rgba(217, 217, 217, 1);
   border-right: none;
   border-left: none;
@@ -16,5 +16,25 @@
   @media (min-width: @tablet-width) {
     padding: 12px;
     display: block;
+  }
+}
+
+.social__img {
+  width: 28px;
+  height: 22px;
+  fill: rgba(102, 102, 102, 1);
+
+  &:active {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      fill: rgba(104, 183, 56, 1);
+    }
+
+    &:active {
+      fill: rgba(104, 183, 56, 0.3);
+    }
   }
 }

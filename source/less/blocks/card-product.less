@@ -17,7 +17,8 @@
       "img"
       "list"
       "button";
-    background-image: linear-gradient(to top, #ebebeb 420px, #ffffff 420px);
+    background-color: rgba(242, 242, 242, 1);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 80px, rgba(242, 242, 242, 1) 80px);
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +41,10 @@
   text-transform: uppercase;
   padding-right: 60px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     font-weight: 400;
@@ -50,6 +55,14 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 19px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -103,12 +116,13 @@
   justify-content: center;
   padding: 10px;
   grid-area: button;
+  cursor: pointer;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
     height: 40px;
   }
 }
-
 
 .card-product__link-img {
   padding-top: 15px;

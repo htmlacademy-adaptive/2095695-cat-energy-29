@@ -149,6 +149,7 @@
   width: 20px;
   height: 20px;
   left: 249px;
+  stroke: rgba(34, 34, 34, 1);
 
   &--mail {
     @media (min-width: @tablet-width) {
@@ -187,9 +188,28 @@
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    padding: 14px 20px;
+    padding: 14px 50px 14px 20px;
     margin-bottom: 20px;
   }
+
+  &:invalid {
+    border-width: 2px;
+    border-color: rgba(255, 130, 130, 1);
+  }
+}
+
+.field__input:invalid + .field__icon {
+
+  stroke: rgba(255, 130, 130, 1);
+}
+
+.field__input:hover {
+  border-color: rgba(205, 205, 205, 1);
+}
+
+.field__input:focus-visible ~ .field__icon {
+  border: rgba(68, 68, 68, 1);
+  stroke: rgba(104, 183, 56, 1);
 }
 
 .field__input-data {
