@@ -20,7 +20,7 @@
           <source srcset="img/img_mobile/logo_cat_energy.svg" media="(max-width: 767px)">
           <source srcset="img/img_tablet/logo_cat_energy_tablet.svg" media="(min-width: 768px) and (max-width: 1439px)">
           <source srcset="img/img_desktop/logo_cat_energy_desktop.svg" media="(min-width: 1440px)">
-          <img src="img/img_mobile/logo_cat_energy.svg" width="190" height="38"
+          <img class="main-header__logo-img" src="img/img_mobile/logo_cat_energy.svg" width="190" height="38"
             alt="Логотип компании функционального питания для котов Кэт Энерджи">
         </picture>
       </a>
@@ -112,7 +112,7 @@
             <ul class="field-group__list style-list field-group__list-data">
               <li class="field-group__item">
                 <label class="field field-data">
-                  <span class="field__lead">E-mail:*</span>
+                  <span class="field__lead field__lead--email">E-mail:*</span>
                   <input class="field__input field__input-data" name="e-mail" type="email"
                     placeholder="kuklachev@gmail.com" required>
                   <svg class="field__icon field__icon--mail" width="20" height="20">
@@ -121,8 +121,8 @@
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Телефон:*</span>
+                <label class="field field--phone">
+                  <span class="field__lead field__lead--phone">Телефон:*</span>
                   <input class="field__input field__input-data" name="phone" type="tel" placeholder="8 (960) 900-60-90"
                     required>
                   <svg class="field__icon field__icon--phone" width="20" height="20">
@@ -132,7 +132,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__group field-group">
+          <div class="form__group form__group--area field-group">
             <label class="field-group__title" for="comment">Комментарий</label>
             <div class="field field-group__area">
               <textarea class="field__input field-textarea" name="comment" id="comment" rows="5"
@@ -140,7 +140,7 @@
             </div>
           </div>
           <fieldset class="form__group field-group">
-            <legend class="field-group__title">Дополнительно</legend>
+            <legend class="field-group__title field-group__title-additional">Дополнительно</legend>
             <ul class="field-group__list style-list field-group__list-additional">
               <li class="field-group__item">
                 <label class="control">
@@ -171,7 +171,7 @@
           </fieldset>
           <div class="form__container">
             <button class="form__button button" type="submit">Отправить заявку</button>
-            <p class="form__additional">* — Обязательные поля</p>
+            <p class="form__additional">* – Обязательные поля</p>
           </div>
         </form>
       </div>
@@ -180,7 +180,7 @@
       <div class="contacts__container contacts__container--color">
         <div class=" wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">
             <span>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
             <span>Санкт-Петербург</span>

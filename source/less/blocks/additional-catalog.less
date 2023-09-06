@@ -2,35 +2,25 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-  }
-}
-
-.additional-catalog {
-  position: relative;
-}
-
-.additional-catalog::before {
-  content: "";
-  position: absolute;
-  top: 41px;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  height: 2px;
-  background-color: #68b738;
-
-  @media (min-width: @tablet-width) {
-    top: 25px;
+    row-gap: 77px;
+    column-gap: 80px;
+    margin-bottom: -70px;
   }
 }
 
 .additional-catalog__list {
   margin-bottom: 35px;
 
+  @media (min-width: @tablet-width) {
+    border: 1px solid rgba(205, 205, 205, 1);
+    margin-bottom: 70px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 70px;
     grid-column: 1 / -2;
+    border-right: none;
+    border-left: none;
   }
 }
 
@@ -39,10 +29,14 @@
   display: grid;
   grid-template-rows: repeat(2, 40px);
   padding-top: 0;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 184px;
+    padding: 0 38px 24px 38px;
+    row-gap: 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,12 +44,12 @@
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
     grid-template-rows: 37px;
     column-gap: 0;
-    padding: 15px 0 17px 0;
+    padding: 20px 0 15px 6px;
   }
 }
 
-.additional-catalog__product:last-child {
-  border-bottom: 1px solid rgba(205, 205, 205, 1);
+.additional-catalog__product:first-child {
+  border-top: none;
 }
 
 .additional-catalog__title {
@@ -67,7 +61,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 20px;
-  padding: 25px 20px 0 20px;
+  padding: 34px 20px 0 20px;
   margin-left: -20px;
   text-align: left;
   margin-bottom: 36px;
@@ -79,13 +73,15 @@
     line-height: 36px;
     margin-bottom: 80px;
     padding: 0 40px;
+    padding-left: 80px;
     margin-left: -40px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -40px;
-    padding: 0 40px 0 40px;
+    margin-left: -36px;
+    padding: 0 28px 0 40px;
     grid-template-columns: minmax(350px, auto);
+    margin-bottom: 0;
   }
 }
 
@@ -99,16 +95,17 @@
   text-transform: uppercase;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    padding-top: 26px;
+    padding-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 0;
+    padding-bottom: 33px;
   }
 }
 
@@ -119,19 +116,26 @@
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   line-height: 14px;
-  align-self: center;
+  align-self: start;
 
   @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 50px;
+    column-gap: 41px;
+    text-align: right;
+    align-items: center;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 28px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-row: 1 / 2;
     grid-column: 3 / 5;
     grid-template-columns: 1fr 82px;
+    padding-top: 7px;
+    text-align: left;
   }
 }
 
@@ -141,10 +145,13 @@
   justify-content: center;
   align-items: center;
   grid-column: 1 / 3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: -8px;
 
   @media (min-width: @desktop-width) {
     grid-column: 5 / 6;
-    grid-row: 1 / 2;
   }
 }
 
@@ -156,12 +163,19 @@
   }
 }
 
+.additional-catalog__property {
+  @media (min-width: @desktop-width) {
+    padding-top: 3px;
+  }
+}
+
 .additional-catalog__promo {
   background: url("../img/img_mobile/bg_offer_mobile.jpg");
   background-color: rgba(104, 183, 56, 1);
   background-repeat: no-repeat;
   background-position: 50%;
-  padding: 188px 61px 43px 58px;
+  padding: 187px 61px 43px 57px;
+  margin: 0 auto;
   margin-top: 35px;
 
   @media (min-width: @mobile-width-only) and (min-resolution: 2dppx) {
@@ -174,6 +188,7 @@
     background-image: url("../img/img_tablet/bg_offer_tablet.jpg");
     background-repeat: no-repeat;
     background-size: 100% 200px;
+    margin-bottom: 75px;
   }
 }
 
@@ -187,8 +202,9 @@
   .additional-catalog__promo {
     background-image: url("../img/img_desktop/bg_offer_desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100%  auto;
+    background-size: 100% auto;
     background-position: 0 0;
+    margin: 0;
   }
 }
 

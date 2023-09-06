@@ -7,7 +7,7 @@
   font-weight: 400;
   line-height: 26px;
   text-transform: none;
-  margin-right: 44px;
+  margin-right: 72px;
   margin-bottom: 35px;
   margin-left: -20px;
   padding: 0 20px;
@@ -20,7 +20,7 @@
     right: 0;
     left: 0;
     height: 2px;
-    margin-top: 16px;
+    margin-top: 15px;
     background-color: rgba(104, 183, 56, 1);
   }
 
@@ -31,11 +31,35 @@
     line-height: 36px;
     padding: 0 40px;
     margin-bottom: 76px;
-    margin-left: -40px;
+    margin-left: -38px;
 
     &::before {
       margin-top: 23px;
     }
+  }
+}
+
+.field__lead {
+  padding-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 3px;
+  }
+}
+
+.field__lead--email {
+  padding-bottom: 0;
+}
+
+.field__lead--phone {
+  padding-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
   }
 }
 
@@ -56,23 +80,42 @@
 }
 
 .field-group__list {
-  padding-bottom: 24px;
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
 .field-group__list-additional {
+  margin-top: -15px;
+  margin-bottom: 17px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 37px;
+    row-gap: 12px;
+    margin-left: 40px;
+    margin-bottom: 37px;
+    column-gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
+    gap: 84px;
+    margin-left: 4px;
+    margin-bottom: 44px;
+  }
+}
+
+.field-group__title-additional {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -85,14 +128,19 @@
 }
 
 .field-group__list--border {
-  padding: 20px 0;
+  padding: 11px 0;
   margin-bottom: 26px;
   position: relative;
 
   @media (min-width: @tablet-width) {
     border: 1px solid rgba(231, 231, 231, 1);
-    padding: 23px 27px 14px 27px;
+    padding: 11px 27px 18px 27px;
+    margin-left: 40px;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 5px;
   }
 
   &::before {
@@ -101,7 +149,7 @@
     top: 0;
     left: calc(50% - 50vw);
     width: 100vw;
-    height: 1px;
+    height: 0.5px;
     background-color: rgba(217, 217, 217, 1);
 
     @media (min-width: @tablet-width) {
@@ -124,6 +172,7 @@
   }
 }
 
+
 .field {
   position: relative;
   display: grid;
@@ -142,6 +191,10 @@
     font-style: normal;
     font-weight: 400;
   }
+
+  &--phone {
+    margin-bottom: -20px;
+  }
 }
 
 .field__icon {
@@ -149,36 +202,23 @@
   width: 20px;
   height: 20px;
   left: 249px;
+  top: -47px;
   stroke: rgba(34, 34, 34, 1);
 
-  &--mail {
-    @media (min-width: @tablet-width) {
-      left: 672px;
-      top: -35px;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: -35px;
-      left: 530px;
-    }
+  @media (min-width: @tablet-width) {
+    left: 634px;
+    top: -50px;
   }
 
-  &--phone {
-    @media (min-width: @tablet-width) {
-      left: 672px;
-      top: -50px;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: -50px;
-      left: 530px;
-    }
+  @media (min-width: @desktop-width) {
+    left: 537px;
   }
 }
 
+
 .field__input {
   min-width: 100px;
-  padding: 14px 34px 14px 14px;
+  padding: 12px 29px 10px 14px;
   color: #222222;
   border: 1px solid #e6e6e6;
   font-family: inherit;
@@ -188,7 +228,7 @@
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    padding: 14px 50px 14px 20px;
+    padding: 15px 42px 13px 18px;
     margin-bottom: 20px;
   }
 
@@ -221,7 +261,11 @@
 }
 
 .field-data {
-  row-gap: 0;
+  margin-bottom: -14px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -18px;
+  }
 }
 
 .title-textarea {
@@ -231,17 +275,41 @@
 .field-group__area {
   display: block;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 80px;
+    width: auto;
+  }
 }
 
 .field-textarea {
-  margin-top: 38px;
-  margin-bottom: 23px;
+  margin-top: 40px;
+  margin-bottom: 19px;
   width: 100%;
   min-height: 150px;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 86px;
     min-width: 100%;
     display: inline;
     height: 175px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 4px;
+    margin-top: 77px;
+    margin-bottom: 27px;
+  }
+}
+
+.form__group--area {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -79px;
   }
 }

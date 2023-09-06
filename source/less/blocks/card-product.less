@@ -1,5 +1,5 @@
 .card-product {
-  padding: 20px 0 25px 0;
+  padding: 5px 0 25px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -10,7 +10,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: 230px auto;
+    grid-template-rows: 232px auto;
     padding: 0 37px 40px 37px;
     width: 324px;
     grid-template-areas:
@@ -18,17 +18,22 @@
       "list"
       "button";
     background-color: rgba(242, 242, 242, 1);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 80px, rgba(242, 242, 242, 1) 80px);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 70px, rgba(242, 242, 242, 1) 70px);
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    grid-template-rows: 222px auto;
   }
 }
 
 .card-product__container {
   grid-area: list;
   padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .card-product__title {
@@ -51,10 +56,11 @@
     line-height: 24px;
     text-align: center;
     padding: 0 55px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 19px;
+    padding: 0 20px 0 17px;
 
     &:hover {
       opacity: 0.6;
@@ -83,11 +89,19 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: capitalize;
+  margin-bottom: 2px;
 
   @media (min-width: @tablet-width) {
+    grid-template-rows: repeat(3, 31px);
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    text-transform: none;
+    align-items: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: repeat(3, 34px);
   }
 }
 
@@ -95,20 +109,28 @@
   text-align: right;
 
   @media (min-width: @tablet-width) {
-    padding-top: 2px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid rgba(205, 205, 205, 1);
     margin: 0;
+    border-bottom: 1px solid rgba(205, 205, 205, 1);
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
   }
 }
 
 .card-product__property {
   @media (min-width: @tablet-width) {
-    padding-top: 2px;
-    padding-bottom: 3px;
     border-bottom: 1px solid rgba(205, 205, 205, 1);
+    margin: 0;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 7px 11px 6px 2px;
   }
 }
+
 
 .card-product__button {
   display: flex;
@@ -118,6 +140,9 @@
   grid-area: button;
   cursor: pointer;
   margin-top: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     height: 40px;
