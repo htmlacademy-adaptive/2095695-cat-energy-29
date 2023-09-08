@@ -6,4 +6,14 @@
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      background-color: rgba(94, 170, 47, 1);
+    }
+  }
 }

@@ -15,7 +15,6 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
-
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
@@ -43,6 +42,7 @@
   },
   "type": "module",
   "dependencies": {
+    "gulp-svg-sprite": "^2.0.3",
     "package-name": "^0.1.0"
   }
 }

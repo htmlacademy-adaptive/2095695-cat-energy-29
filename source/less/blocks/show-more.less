@@ -2,7 +2,7 @@
   padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 38px 40px 38px;
+    padding: 0 38px 37px 38px;
   }
 }
 
@@ -17,6 +17,7 @@
   position: relative;
   padding: 0;
   margin: 0;
+  margin-bottom: 7px;
 
   &::before {
     content: " ";
@@ -43,7 +44,7 @@
       background-image: url("../img/catalog/plus_tablet.svg");
       height: 60px;
       width: 60px;
-      top: -6px;
+      top: -3px;
       left: 50%;
     }
 
@@ -59,6 +60,8 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -77,10 +80,25 @@
 }
 
 .show-more__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   color: rgba(68, 68, 68, 1);
   background-color: rgba(242, 242, 242, 1);
 
+  &:active {
+    background-color: rgba(235, 235, 235, 1);
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      background-color: rgba(235, 235, 235, 1);
+    }
   }
 }

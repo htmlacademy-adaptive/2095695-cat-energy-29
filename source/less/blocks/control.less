@@ -4,7 +4,8 @@
   grid-template-columns: 30px 1fr;
   align-items: center;
   column-gap: 15px;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
+  margin-top: 11px;
 
   &::before {
     content: " ";
@@ -73,4 +74,16 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.control__input:hover + .control__lead::before {
+  border-color: rgba(186, 186, 186, 1);
+}
+
+.control__input--radio:focus-visible + .control__lead::before {
+  outline: 2px solid rgba(68, 68, 68, 1);
+}
+
+.control__input:disabled + .control__lead {
+  opacity: 0.3;
 }

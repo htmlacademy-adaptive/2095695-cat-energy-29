@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: row;
-  padding: 40px 0;
+  padding: 38px 0;
   background-color: rgba(242, 242, 242, 1);
 
   @media (min-width: @tablet-width) {
@@ -14,11 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 0;
+    padding: 49px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 66px 0;
+    padding: 58px 0;
   }
 }
 
@@ -26,9 +26,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-right: 37px;
+  }
+}
+
+.footer__logo-catenergy {
+  width: 128px;
+  height: 24px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

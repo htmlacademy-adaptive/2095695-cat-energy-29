@@ -28,7 +28,7 @@
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
-    padding-top: 110px;
+    padding-top: 133px;
   }
 }
 
@@ -51,14 +51,74 @@
 }
 
 .page-main__promo {
-  @media (min-width: @desktop-width) {
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px), url("../img/img_mobile/bg_image_promo.jpg");
+  padding: 27px 0 20px 0;
+  background-color: rgba(76, 74, 79, 1);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+@media (min-width: @mobile-width-only) and (min-resolution: 2dppx) {
+  .page-main__promo {
+    background: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px), url("../img/img_mobile/bg_image_promo@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__promo {
+    background-color: rgba(255, 255, 255, 1);
+    background-image: none;
+    padding-top: 91px;
+    padding-left: 69px;
+    margin-bottom: -105px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__promo {
+    background-color: rgba(76, 74, 79, 1);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/img_desktop/bg_image_promo_desktop.jpg");
+    padding-top: 100px;
+    margin-top: -100px;
     margin-bottom: 82px;
+    background-position: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-height: 703px;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .page-main__promo {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/img_desktop/bg_image_promo_desktop@2x.jpg");
+  }
+}
+
+.page__main-advantages {
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+    border-bottom: none;
+    padding: 0;
   }
 }
 
 .page-main__promo .wrapper {
   position: relative;
 }
+
+.page__main-example {
+  @media (min-width: @desktop-width) {
+    margin-left: 5px;
+  }
+}
+
 
 .page__subtitle {
   color: rgba(0, 0, 0, 1);
@@ -71,36 +131,56 @@
 }
 
 .page__title-form {
+  padding-top: 28px;
   margin-bottom: 37px;
   text-align: left;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(235, 235, 235, 1);
+  }
+
   @media (min-width: @tablet-width) {
-    padding-top: 77px;
-    margin-bottom: 54px;
+    padding: 89px 70px 0 40px;
+    margin-bottom: 34px;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 87px;
+    padding: 97px 70px 0 0;
   }
 }
 
 .page__subtitle-form {
   margin-bottom: 39px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding-right: 350px;
+    padding-right: 340px;
     margin-bottom: 66px;
+    padding-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
     padding-right: 835px;
+    padding-left: 1px;
   }
 }
 
 .page__header {
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     margin-bottom: -39px;
   }
@@ -110,26 +190,39 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 60px;
+    row-gap: 70px;
     column-gap: 60px;
     margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 63px;
-    column-gap: 80px;
+    row-gap: 74px;
+    column-gap: 79px;
+    margin-bottom: 76px;
   }
 }
 
 .page-main__additional {
   margin-bottom: 35px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 87px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      top: 21px;
+    }
   }
 }
