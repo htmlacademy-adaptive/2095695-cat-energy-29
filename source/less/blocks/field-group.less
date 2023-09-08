@@ -8,7 +8,7 @@
   line-height: 26px;
   text-transform: none;
   margin-right: 72px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   margin-left: -20px;
   padding: 0 20px;
 
@@ -31,11 +31,15 @@
     line-height: 36px;
     padding: 0 40px;
     margin-bottom: 76px;
-    margin-left: -38px;
+    margin-left: -1px;
 
     &::before {
       margin-top: 23px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -42px;
   }
 }
 
@@ -47,7 +51,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 3px;
+    padding-left: 0;
   }
 }
 
@@ -56,10 +60,10 @@
 }
 
 .field__lead--phone {
-  padding-bottom: 6px;
+  padding-bottom: 1px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 4px;
+    padding-top: 0;
   }
 }
 
@@ -108,13 +112,17 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 84px;
-    margin-left: 4px;
-    margin-bottom: 44px;
+    margin-left: 0;
+    margin-bottom: 45px;
   }
 }
 
 .field-group__title-additional {
   @media (min-width: @tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 60px;
   }
 }
@@ -140,7 +148,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 5px;
+    margin-left: 3px;
+    padding: 13px 27px 14px 27px;
   }
 
   &::before {
@@ -193,7 +202,11 @@
   }
 
   &--phone {
-    margin-bottom: -20px;
+    margin-bottom: -18px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: -24px;
+    }
   }
 }
 
@@ -231,15 +244,13 @@
     padding: 15px 42px 13px 18px;
     margin-bottom: 20px;
   }
-
-  &:invalid {
-    border-width: 2px;
-    border-color: rgba(255, 130, 130, 1);
-  }
 }
 
-.field__input:invalid + .field__icon {
+.field__input--error {
+  border: 2px solid rgba(255, 130, 130, 1);
+}
 
+.field__input--error + .field__icon {
   stroke: rgba(255, 130, 130, 1);
 }
 
@@ -261,7 +272,11 @@
 }
 
 .field-data {
-  margin-bottom: -14px;
+  margin-bottom: -22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -12px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: -18px;
@@ -290,15 +305,16 @@
   padding-right: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 86px;
+    margin-top: 88px;
     min-width: 100%;
     display: inline;
     height: 175px;
     margin-left: 40px;
+    padding: 15px 42px 13px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 4px;
+    margin-left: 0;
     margin-top: 77px;
     margin-bottom: 27px;
   }

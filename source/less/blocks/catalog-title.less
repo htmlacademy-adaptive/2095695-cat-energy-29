@@ -2,12 +2,26 @@
   text-align: left;
   padding: 26px 0 41px 0;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(235, 235, 235, 1);
+  }
+
   @media (min-width: @tablet-width) {
     padding: 88px 0 95px 0;
     border: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 56px 0 96px 3px;
+    padding: 96px 0 96px 0;
   }
 }
