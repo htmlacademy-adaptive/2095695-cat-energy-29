@@ -256,7 +256,7 @@
   position: absolute;
   fill: rgba(102, 102, 102, 1);
   background-color: #ffffff;
-  border: 3px solid rgba(102, 102, 102, 1);
+  outline: 3px solid rgba(102, 102, 102, 1);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -264,14 +264,14 @@
 
 @media (min-width: @desktop-width) {
   .example__slider-button:hover .example__slider-img {
-    border-color: rgba(104, 183, 56, 1);
+    outline: 3px solid rgba(104, 183, 56, 1);
     fill: rgba(104, 183, 56, 1);
   }
 }
 
 @media (min-width: @desktop-width) {
   .example__slider-button:active .example__slider-img {
-    border-color: rgba(104, 183, 56, 0.6);
+    outline: 3px solid rgba(104, 183, 56, 0.6);
     fill: rgba(104, 183, 56, 0.6);
   }
 }
