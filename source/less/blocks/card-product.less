@@ -92,7 +92,7 @@
   margin-bottom: 2px;
 
   @media (min-width: @tablet-width) {
-    grid-template-rows: repeat(3, 31px);
+    grid-auto-rows: minmax(31px, max-content);
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -101,7 +101,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-rows: repeat(3, 34px);
+    grid-auto-rows: minmax(34px, max-content);
   }
 }
 

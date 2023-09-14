@@ -4,12 +4,13 @@
     grid-template-columns: 200px 1fr;
     padding: 13px 0 0 0;
     width: 708px;
+    column-gap: 50px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     padding-top: 43px;
-    width: 1222px;
+    width: 1223px;
   }
 }
 
@@ -17,9 +18,12 @@
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 11px 0;
   min-height: 65px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .main-header__logo {

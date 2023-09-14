@@ -2,9 +2,15 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
     align-items: center;
     margin-left: auto;
+    grid-template-columns: max-content 1fr;
+    row-gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -13px;
   }
 }
 
@@ -42,14 +48,16 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+
     display: flex;
-    gap: 34px;
-    margin-right: 4px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 470px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-wrap: wrap;
-    margin-right: 2px;
+    margin-right: -1px;
+    width: 620px;
   }
 }
 

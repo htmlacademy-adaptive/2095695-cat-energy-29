@@ -2,6 +2,12 @@
   height: 100%;
 }
 
+.page__body--color {
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(99, 166, 59, 1) 50%);
+  }
+}
+
 .page__title {
   color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -11,6 +17,7 @@
   font-weight: 400;
   line-height: 36px;
   margin: 0;
+  word-wrap: break-word;
 
   &--color {
     color: rgba(0, 0, 0, 1);
@@ -24,6 +31,7 @@
     line-height: 60px;
     display: inline-block;
     text-align: left;
+    word-wrap: break-word;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,6 +56,10 @@
 
 .page__main {
   flex-grow: 1;
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
 
 .page-main__promo {
