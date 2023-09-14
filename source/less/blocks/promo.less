@@ -3,10 +3,13 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 40px;
+    width: 600px;
+    word-wrap: break-word;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 41px;
+    width: 420px;
   }
 }
 
@@ -29,6 +32,11 @@
     line-height: 20px;
     text-align: left;
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    word-wrap: break-word;
+    width: 420px;
   }
 }
 
@@ -104,7 +112,6 @@
 
 .promo__content-bg {
   @media (min-width: @desktop-width) {
-    width: 690px;
     margin-left: 86px;
   }
 }

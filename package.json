@@ -3,7 +3,6 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
-    "browser-sync": "2.27.7",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-less": "5.0.0",
@@ -47,6 +46,7 @@
   },
   "type": "module",
   "dependencies": {
+    "browser-sync": "^2.29.3",
     "browser-sync-client": "^2.29.3"
   }
 }
