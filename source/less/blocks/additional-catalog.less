@@ -20,6 +20,7 @@
     border-right: none;
     border-left: none;
     margin-bottom: 86px;
+    border: none;
   }
 }
 
@@ -47,8 +48,8 @@
   }
 }
 
-.additional-catalog__product:first-child {
-  border-top: none;
+.additional-catalog__product:last-child {
+  border-bottom: 1px solid rgba(205, 205, 205, 1);
 }
 
 .additional-catalog__title {
@@ -190,6 +191,7 @@
   padding: 187px 61px 43px 57px;
   margin: 0 auto;
   margin-top: 37px;
+  background-size: cover;
 
   @media (min-width: @mobile-width-only) and (min-resolution: 2dppx) {
     background: url("../img/img_mobile/bg_offer_mobile@2x.jpg");
@@ -200,7 +202,7 @@
   .additional-catalog__promo {
     background-image: url("../img/img_tablet/bg_offer_tablet.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 200px;
+    background-size: cover;
     margin-bottom: 75px;
   }
 }
@@ -215,7 +217,7 @@
   .additional-catalog__promo {
     background-image: url("../img/img_desktop/bg_offer_desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: 0 0;
     margin: 0;
   }
