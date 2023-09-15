@@ -30,16 +30,19 @@
   }
 }
 
-.contacts__container .wrapper {
+.contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 26px;
   background-color: rgba(255, 255, 255, 1);
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
     gap: 308px;
     padding: 61px 40px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,7 +64,7 @@
   }
 }
 
-.contacts__container--color .wrapper {
+.contacts__wrapper--color {
   background-color: rgba(242, 242, 242, 1);
 
   @media (min-width: @desktop-width) {

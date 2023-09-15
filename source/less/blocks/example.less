@@ -16,11 +16,19 @@
   }
 }
 
-.example .wrapper {
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     gap: 227px;
+    width: 1220px;
   }
 }
 
